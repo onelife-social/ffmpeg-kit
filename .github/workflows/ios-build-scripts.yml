@@ -73,7 +73,7 @@ jobs:
        - name: print ffbuild logs
          if: ${{ failure() }}
          run: '[[ -f ./src/ffmpeg/ffbuild/config.log ]] && tail -50 ./src/ffmpeg/ffbuild/config.log'
-   build-lts-on-macos-monterey:
+  build-lts-on-macos-monterey:
      name: ios lts on monterey
      runs-on: macos-12
      strategy:
